@@ -1,14 +1,123 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Home
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content
+        pullingIcon="arrow-dropdown"
+        pullingText="Pull to refresh"
+        refreshingSpinner="circles"
+        refreshingText="Refreshing...">
+      </ion-refresher-content>
+    </ion-refresher>
+   <h1>Slides</h1>
+  <ion-list>
+    <ion-item-sliding>
+        <ion-item>
+              
+             
+            <h2>Item 1</h2>
+          </ion-item>
+          <ion-item-options side="right">
+            <button ion-button color="primary" (click)="ondelete()">
+              <ion-icon name="trash"></ion-icon>
+              delete
+            </button>
+            <button ion-button color="secondary">
+              <ion-icon name="clipboard"></ion-icon>
+              edit
+            </button>
+          </ion-item-options>
+          <ion-item-options side="left">
+            <button ion-button color="primary">
+              <ion-icon name="mail"></ion-icon>
+              Email
+            </button>
+          </ion-item-options>
+        </ion-item-sliding>
+     
+        <ion-item-sliding>
+          <ion-item>
+            
+           
+            <h2>Item 2</h2>
+          </ion-item>
+          <ion-item-options side="right">
+            <button ion-button color="primary" (click)="ondelete()">
+              <ion-icon name="trash"></ion-icon>
+              delete
+            </button>
+            <button ion-button color="secondary">
+              <ion-icon name="clipboard"></ion-icon>
+              edit
+            </button>
+          </ion-item-options>
+          <ion-item-options side="left">
+            <button ion-button color="primary">
+              <ion-icon name="mail"></ion-icon>
+              Email
+            </button>
+          </ion-item-options>
+        </ion-item-sliding>
+    
+      
+
+      <ion-item-sliding>
+      <ion-item>
+            
+           
+          <h2>Item 3</h2>
+        </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="primary" (click)="ondelete()">
+            <ion-icon name="trash"></ion-icon>
+            delete
+          </button>
+          <button ion-button color="secondary">
+            <ion-icon name="clipboard"></ion-icon>
+            edit
+          </button>
+        </ion-item-options>
+        <ion-item-options side="left">
+          <button ion-button color="primary">
+            <ion-icon name="mail"></ion-icon>
+            Email
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+
+
+
+      <ion-item-sliding>
+          <ion-item>
+                
+               
+              <h2>Item 4</h2>
+            </ion-item>
+            <ion-item-options side="right">
+              <button ion-button color="primary" (click)="ondelete()">
+                <ion-icon name="trash"></ion-icon>
+                delete
+              </button>
+              <button ion-button color="secondary">
+                <ion-icon name="clipboard"></ion-icon>
+                edit
+              </button>
+            </ion-item-options>
+            <ion-item-options side="left">
+              <button ion-button color="primary">
+                <ion-icon name="mail"></ion-icon>
+                Email
+              </button>
+            </ion-item-options>
+          </ion-item-sliding>
+    </ion-list>
+ 
+      
 </ion-content>
